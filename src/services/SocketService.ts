@@ -12,7 +12,7 @@ export default class SocketService {
 
   constructor(userId: string) {
     this.userId = userId;
-    this.socket = io("https://fitness-api-dev.itgoon.net/selvy", {
+    this.socket = io("wss://fitness-api-dev.itgoon.net/selvy", {
       path: "/selvy/socket.io",
       transports: ["websocket"],
       forceNew: true,
