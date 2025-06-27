@@ -18,6 +18,9 @@ export default class SocketService {
       forceNew: true,
       reconnectionAttempts: 3,
       timeout: 10000,
+      query: {
+        email: "admin@selvy.co.kr",
+      },
     });
     this.setupEventListeners();
   }
